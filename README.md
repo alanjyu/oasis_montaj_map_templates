@@ -1,5 +1,7 @@
 # Montaj Map Templates
 
+This repository provides templates for faster map creation in Geosoft Oasis Montaj.
+
 ## Environment
 - Geosoft Oasis 2021.2
 
