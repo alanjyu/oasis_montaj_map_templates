@@ -27,4 +27,4 @@ I’ve defined a series of links that position the elements relative to its surr
 ## Limitation
 
 - Geosoft templates cannot define the sizes of coordinate labels or legends, or any elements related to the data before creating the map.
-- Geosoft templates does not store any images which must be stored externally (refer to Step 5).
+- Geosoft templates does not include any images which must be stored externally (refer to Step 5).
