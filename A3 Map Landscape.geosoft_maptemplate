@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<maptemplate units="cm" media="A3" orientation="landscape">
+	<views>
+		<view name="Data" sequencenumber="2">
+			<initialplacement minx="0.77777000000000107" maxx="30.33303" miny="0.67125000000000057" maxy="26.17875"/>
+			<constraints>
+				<movex from="Center" to="Left" offset="0" item="REC_Data"/>
+				<movey from="Center" to="Bottom" offset="0" item="REC_Data"/>
+				<sizex scale="0.95" offset="0" item="REC_Data"/>
+				<sizey scale="0.95" offset="0" item="REC_Data"/>
+			</constraints>
+		</view>
+	</views>
+	<basegroups>
+		<basegroup name="LOGO" sequencenumber="0" definition="Image">
+			<initialplacement minx="36.287492847206487" maxx="37.9275" miny="0.0125" maxy="1.5770434799697071"/>
+			<constraints>
+				<movex from="Right" to="Right" offset="-0.0125" item="REC_Info"/>
+				<movey from="Bottom" to="Bottom" offset="0.0125" item="REC_Info"/>
+			</constraints>
+			<parameters>
+				<parameter name="strImage" value="Logoeng.jpg(IMG;t=jpg)"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="Surround" sequencenumber="1" definition="Rectangle">
+			<initialplacement minx="0" maxx="37.94" miny="0" maxy="26.85"/>
+			<constraints>
+				<movex from="Left" to="Left" offset="0"/>
+				<movey from="Bottom" to="Bottom" offset="0"/>
+				<sizex scale="1" offset="0"/>
+				<sizey scale="1" offset="0"/>
+			</constraints>
+			<parameters>
+				<parameter name="iFillColour" value="N"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="REC_ClientProject" sequencenumber="3" definition="Rectangle">
+			<initialplacement minx="31.1108" maxx="37.94" miny="2.9463142637208959" maxy="4.4253552291067324"/>
+			<constraints>
+				<movex from="Right" to="Right" offset="0" item="REC_MapTitle"/>
+				<movey from="Bottom" to="Top" offset="0" item="REC_MapTitle"/>
+				<sizex scale="0.18" offset="0"/>
+			</constraints>
+			<parameters>
+				<parameter name="dThick" value="0.25mm"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="NorthArrow" sequencenumber="4" definition="NorthArrow">
+			<initialplacement minx="33.7754" maxx="35.2754" miny="23.85" maxy="26.35"/>
+			<constraints>
+				<movex from="Center" to="Left" offset="0" item="REC_ClientProject"/>
+				<movey from="Top" to="Top" offset="-0.5"/>
+			</constraints>
+			<parameters>
+				<parameter name="dThick" value="0.35mm"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="ScaleBar" sequencenumber="5" definition="ScaleBar">
+			<initialplacement minx="32.986824" maxx="36.063976" miny="5.893840226655759" maxy="6.8938402266557581"/>
+			<constraints>
+				<movex from="Center" to="Left" offset="0" item="REC_ClientProject"/>
+			</constraints>
+			<parameters>
+				<parameter name="dMaxLength" value="4.5cm"/>
+				<parameter name="dTextSize" value="1.5mm"/>
+				<parameter name="eType" value="Normal"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="REC_Info" sequencenumber="6" definition="Rectangle">
+			<initialplacement minx="31.1108" maxx="37.94" miny="0" maxy="1.5898658799918495"/>
+			<constraints>
+				<movex from="Right" to="Right" offset="0"/>
+				<movey from="Bottom" to="Bottom" offset="0"/>
+				<sizex scale="1" offset="0" item="REC_ClientProject"/>
+			</constraints>
+			<parameters>
+				<parameter name="dThick" value="0.25mm"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="REC_Data" sequencenumber="7" definition="Rectangle">
+			<initialplacement minx="0" maxx="31.1108" miny="0" maxy="26.85"/>
+			<constraints>
+				<movex from="Left" to="Left" offset="0"/>
+				<movey from="Top" to="Top" offset="0"/>
+				<sizex scale="0.82" offset="0"/>
+				<sizey scale="1" offset="0"/>
+			</constraints>
+			<parameters>
+				<parameter name="dThick" value=".25mm"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="PMT_ClientName" sequencenumber="8" definition="QuestionTextFixed">
+			<initialplacement minx="33.2754" maxx="35.7754" miny="2.2753552291067343" maxy="4.275355229106732"/>
+			<constraints>
+				<movex from="Center" to="Left" offset="0" item="REC_ClientProject"/>
+				<movey from="Top" to="Top" offset="-0.15" item="REC_ClientProject"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="6pt"/>
+				<parameter name="strFont" value="Arial(TT)"/>
+				<parameter name="strQuestion" value="Enter client name"/>
+				<parameter name="strText" value="Client"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="PMT_ProjectName" sequencenumber="9" definition="QuestionTextFixed">
+			<initialplacement minx="32.0254" maxx="37.0254" miny="1.6253552291067326" maxy="2.1253552291067344"/>
+			<constraints>
+				<movex from="Center" to="Left" offset="0" item="REC_ClientProject"/>
+				<movey from="Top" to="Bottom" offset="-0.15" item="PMT_ClientName"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="5pt"/>
+				<parameter name="strQuestion" value="Enter project name"/>
+				<parameter name="strText" value="Project"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="PMT_ProjectLocation" sequencenumber="10" definition="QuestionTextFixed">
+			<initialplacement minx="33.7754" maxx="35.2754" miny="0.97535522910673755" maxy="1.4753552291067327"/>
+			<constraints>
+				<movex from="Center" to="Left" offset="0" item="PMT_ClientName"/>
+				<movey from="Top" to="Bottom" offset="-0.15" item="PMT_ProjectName"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="5pt"/>
+				<parameter name="strQuestion" value="Enter project location"/>
+				<parameter name="strText" value="Location"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="PMT_MapTitle" sequencenumber="11" definition="QuestionTextFixed">
+			<initialplacement minx="33.7754" maxx="35.2754" miny="2.296314263720896" maxy="2.796314263720896"/>
+			<constraints>
+				<movex from="Center" to="Left" offset="0" item="REC_MapTitle"/>
+				<movey from="Top" to="Top" offset="-0.15" item="REC_MapTitle"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="6pt"/>
+				<parameter name="strFont" value="Arial(TT)"/>
+				<parameter name="strQuestion" value="Enter map title"/>
+				<parameter name="strText" value="Map title"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="PMT_MapSubtitle" sequencenumber="12" definition="QuestionTextFixed">
+			<initialplacement minx="33.2754" maxx="35.7754" miny="1.1463142637209047" maxy="2.1463142637208956"/>
+			<constraints>
+				<movex from="Center" to="Left" offset="0" item="PMT_MapTitle"/>
+				<movey from="Top" to="Bottom" offset="-0.15" item="PMT_MapTitle"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="5pt"/>
+				<parameter name="strQuestion" value="Enter map subtitle"/>
+				<parameter name="strText" value="Map Subtitle"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="PMT_Unit" sequencenumber="13" definition="QuestionTextFixed">
+			<initialplacement minx="33.589255307051253" maxx="35.461544692948756" miny="0.52550465206248431" maxy="0.99631426372090481"/>
+			<constraints>
+				<movex from="Center" to="Left" offset="0" item="PMT_MapSubtitle"/>
+				<movey from="Top" to="Bottom" offset="-0.15" item="PMT_MapSubtitle"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="4pt"/>
+				<parameter name="strFont" value="Arial Black(TT)"/>
+				<parameter name="strQuestion" value="Enter map unit"/>
+				<parameter name="strText" value="(nT)"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="TXT_InterpretedBy" sequencenumber="14" definition="TextFixed">
+			<initialplacement minx="31.2608" maxx="32.955172478495101" miny="1.3133568173177388" maxy="1.4398658799918493"/>
+			<constraints>
+				<movex from="Left" to="Left" offset="0.15" item="REC_Info"/>
+				<movey from="Top" to="Top" offset="-0.15" item="REC_Info"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="3.5pt"/>
+				<parameter name="strDefault" value="Interpreted by:"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="TXT_SurveyedBy" sequencenumber="15" definition="TextFixed">
+			<initialplacement minx="31.2608" maxx="32.7608" miny="0.71335681731772949" maxy="1.2133568173177389"/>
+			<constraints>
+				<movex from="Left" to="Left" offset="0" item="TXT_InterpretedBy"/>
+				<movey from="Top" to="Bottom" offset="-0.1" item="TXT_InterpretedBy"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="3.5pt"/>
+				<parameter name="strDefault" value="Surveyed by:"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="TXT_VerifiedBy" sequencenumber="16" definition="TextFixed">
+			<initialplacement minx="31.2608" maxx="32.382506144928406" miny="0.28727944960597313" maxy="0.61335681731772951"/>
+			<constraints>
+				<movex from="Left" to="Left" offset="0" item="TXT_SurveyedBy"/>
+				<movey from="Top" to="Bottom" offset="-0.1" item="TXT_SurveyedBy"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="3.5pt"/>
+				<parameter name="strDefault" value="Verified by:"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="PMT_InterpreterName" sequencenumber="17" definition="QuestionTextFixed">
+			<initialplacement minx="33.105172478495099" maxx="34.015589995453901" miny="1.2104406657182496" maxy="1.4398658799918493"/>
+			<constraints>
+				<movex from="Left" to="Right" offset="0.15" item="TXT_InterpretedBy"/>
+				<movey from="Top" to="Top" offset="0" item="TXT_InterpretedBy"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="3.5pt"/>
+				<parameter name="strQuestion" value="Enter interpreter name"/>
+				<parameter name="strText" value="Interpreter"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="PMT_InterpretationDate" sequencenumber="18" definition="QuestionTextFixed">
+			<initialplacement minx="35.866959462288179" maxx="36.237492847206482" miny="1.3199874319300593" maxy="1.4398658799918493"/>
+			<constraints>
+				<movex from="Right" to="Left" offset="-0.05" item="LOGO"/>
+				<movey from="Top" to="Top" offset="0" item="TXT_InterpretedBy"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="3.5pt"/>
+				<parameter name="strQuestion" value="Enter date of interpretation"/>
+				<parameter name="strText" value="YYYY/MM"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="PMT_SurveyorName" sequencenumber="19" definition="QuestionTextFixed">
+			<initialplacement minx="33.105172478495099" maxx="33.7323508126074" miny="0.71335681731772949" maxy="1.0098411207162752"/>
+			<constraints>
+				<movex from="Left" to="Left" offset="0" item="PMT_InterpreterName"/>
+				<movey from="Bottom" to="Bottom" offset="0" item="TXT_SurveyedBy"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="3.5pt"/>
+				<parameter name="strQuestion" value="Enter surveyor name"/>
+				<parameter name="strText" value="Surveyor"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="PMT_SurveyDate" sequencenumber="20" definition="QuestionTextFixed">
+			<initialplacement minx="35.866959462288179" maxx="37.280961524650586" miny="0.359856301727141" maxy="1.0098411207162752"/>
+			<constraints>
+				<movex from="Left" to="Left" offset="0" item="PMT_InterpretationDate"/>
+				<movey from="Top" to="Top" offset="0" item="PMT_SurveyorName"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="3.5pt"/>
+				<parameter name="strQuestion" value="Enter date of survey"/>
+				<parameter name="strText" value="YYYY/MM"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="PMT_VerifierName" sequencenumber="21" definition="QuestionTextFixed">
+			<initialplacement minx="33.105172478495099" maxx="35.129248011312093" miny="0.054597937835835803" maxy="0.61335681731772951"/>
+			<constraints>
+				<movex from="Left" to="Left" offset="0" item="PMT_SurveyorName"/>
+				<movey from="Top" to="Top" offset="0" item="TXT_VerifiedBy"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="3.5pt"/>
+				<parameter name="strQuestion" value="Enter verifier name"/>
+				<parameter name="strText" value="Verifier"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="PMT_VerificationDate" sequencenumber="22" definition="QuestionTextFixed">
+			<initialplacement minx="35.866959462288179" maxx="37.366485842938587" miny="0.15722711978149678" maxy="0.61335681731772951"/>
+			<constraints>
+				<movex from="Left" to="Left" offset="0" item="PMT_SurveyDate"/>
+				<movey from="Top" to="Top" offset="0" item="PMT_VerifierName"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="3.5pt"/>
+				<parameter name="strQuestion" value="Enter date of verification"/>
+				<parameter name="strText" value="YYYY/MM"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="REC_MapTitle" sequencenumber="23" definition="Rectangle">
+			<initialplacement minx="31.1108" maxx="37.94" miny="1.5898658799918495" maxy="2.9463142637208959"/>
+			<constraints>
+				<movex from="Right" to="Right" offset="0" item="REC_Info"/>
+				<movey from="Bottom" to="Top" offset="0" item="REC_Info"/>
+				<sizex scale="1" offset="0" item="REC_ClientProject"/>
+			</constraints>
+			<parameters>
+				<parameter name="dThick" value=".25mm"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="PMT_ReferenceMap" sequencenumber="24" definition="QuestionTextFixed">
+			<initialplacement minx="31.2608" maxx="34.406520572509208" miny="-0.42288186833760977" maxy="0.18727944960597315"/>
+			<constraints>
+				<movex from="Left" to="Left" offset="0" item="TXT_VerifiedBy"/>
+				<movey from="Top" to="Bottom" offset="-0.1" item="TXT_VerifiedBy"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="3.5pt"/>
+				<parameter name="strQuestion" value="Enter reference map name"/>
+				<parameter name="strText" value="Reference map: [ENTER HERE]"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="PMT_ProjectNo" sequencenumber="25" definition="QuestionTextFixed">
+			<initialplacement minx="31.2608" maxx="35.206509856035204" miny="-1.0110109226924713" maxy="-0.52288186833760975"/>
+			<constraints>
+				<movex from="Left" to="Left" offset="0" item="PMT_ReferenceMap"/>
+				<movey from="Top" to="Bottom" offset="-0.1" item="PMT_ReferenceMap"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="3.5pt"/>
+				<parameter name="strQuestion" value="Enter project number"/>
+				<parameter name="strText" value="Project no.: [ENTER HERE]"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="PMT_MapScale" sequencenumber="26" definition="QuestionTextFixed">
+			<initialplacement minx="35.737492847206482" maxx="36.237492847206482" miny="-0.31272055039402691" maxy="0.18727944960597315"/>
+			<constraints>
+				<movex from="Right" to="Left" offset="-0.05" item="LOGO"/>
+				<movey from="Top" to="Top" offset="0" item="PMT_ReferenceMap"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="3.5pt"/>
+				<parameter name="strQuestion" value="Enter map scale"/>
+				<parameter name="strText" value="Scale: [ENTER HERE]"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="PMT_MapNo" sequencenumber="27" definition="QuestionTextFixed">
+			<initialplacement minx="34.813783105338075" maxx="36.237492847206482" miny="-1.3228711518636436" maxy="-0.52288186833760975"/>
+			<constraints>
+				<movex from="Right" to="Left" offset="-0.05" item="LOGO"/>
+				<movey from="Top" to="Top" offset="0" item="PMT_ProjectNo"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="3.5pt"/>
+				<parameter name="strQuestion" value="Enter map number"/>
+				<parameter name="strText" value="Map no.: [ENTER HERE]"/>
+			</parameters>
+		</basegroup>
+	</basegroups>
+</maptemplate>
