@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<maptemplate units="cm" media="30cm" orientation="landscape">
+	<views>
+		<view name="Data" sequencenumber="16">
+			<initialplacement minx="1.2550000000000012" maxx="21.145" miny="15.3" maxy="28.5"/>
+			<constraints>
+				<movex from="Center" to="Left" offset="-0.5" item="REC_Data"/>
+				<movey from="Top" to="Top" offset="-1.5" item="REC_Data"/>
+				<sizex scale="0.85" offset="0" item="REC_Data"/>
+				<sizey scale="0.44" offset="0" item="REC_Data"/>
+			</constraints>
+		</view>
+		<view name="Data_1" sequencenumber="17">
+			<initialplacement minx="1.2550000000000012" maxx="21.145" miny="1.5" maxy="14.7"/>
+			<constraints>
+				<movex from="Left" to="Left" offset="0" item="Data"/>
+				<movey from="Bottom" to="Bottom" offset="1.5" item="REC_Data"/>
+				<sizex scale="1" offset="0" item="Data"/>
+				<sizey scale="1" offset="0" item="Data"/>
+			</constraints>
+		</view>
+	</views>
+	<basegroups>
+		<basegroup name="Surround" sequencenumber="0" definition="Rectangle">
+			<initialplacement minx="0" maxx="30" miny="0" maxy="30"/>
+			<constraints>
+				<movex from="Left" to="Left" offset="0"/>
+				<movey from="Bottom" to="Bottom" offset="0"/>
+				<sizex scale="1" offset="0"/>
+				<sizey scale="1" offset="0"/>
+			</constraints>
+			<parameters>
+				<parameter name="iFillColour" value="N"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="REC_Info" sequencenumber="1" definition="Rectangle">
+			<initialplacement minx="23.4" maxx="30" miny="0.5" maxy="1"/>
+			<constraints>
+				<movex from="Right" to="Right" offset="0" item="REC_Company"/>
+				<movey from="Bottom" to="Top" offset="0" item="REC_Company"/>
+				<sizex scale="1" offset="0" item="REC_Company"/>
+				<sizey scale="1" offset="0" item="REC_Company"/>
+			</constraints>
+			<parameters>
+				<parameter name="dThick" value=".25mm"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="REC_ClientProject" sequencenumber="2" definition="Rectangle">
+			<initialplacement minx="23.4" maxx="30" miny="1" maxy="2.5"/>
+			<constraints>
+				<movex from="Right" to="Right" offset="0" item="REC_Info"/>
+				<movey from="Bottom" to="Top" offset="0" item="REC_Info"/>
+				<sizex scale="0.22" offset="0"/>
+			</constraints>
+			<parameters>
+				<parameter name="dThick" value="0.25mm"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="REC_Company" sequencenumber="3" definition="Rectangle">
+			<initialplacement minx="23.4" maxx="30" miny="0" maxy="0.5"/>
+			<constraints>
+				<movex from="Right" to="Right" offset="0"/>
+				<movey from="Bottom" to="Bottom" offset="0"/>
+				<sizex scale="1" offset="0" item="REC_ClientProject"/>
+			</constraints>
+			<parameters>
+				<parameter name="dThick" value="0.25mm"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="REC_Data" sequencenumber="4" definition="Rectangle">
+			<initialplacement minx="0" maxx="23.4" miny="0" maxy="30"/>
+			<constraints>
+				<movex from="Left" to="Left" offset="0"/>
+				<movey from="Top" to="Top" offset="0"/>
+				<sizex scale="0.78" offset="0"/>
+				<sizey scale="1" offset="0"/>
+			</constraints>
+			<parameters>
+				<parameter name="dThick" value=".25mm"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="LOGO" sequencenumber="5" definition="Image">
+			<initialplacement minx="25.507498211801604" maxx="27.892501788198402" miny="27" maxy="29"/>
+			<constraints>
+				<movex from="Center" to="Right" offset="0" item="REC_ClientProject"/>
+				<movey from="Top" to="Top" offset="-1"/>
+			</constraints>
+			<parameters>
+				<parameter name="strImage" value="Logoeng.jpg(IMG;t=jpg)"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="ScaleBar" sequencenumber="6" definition="ScaleBar">
+			<initialplacement minx="25.161424" maxx="28.238576" miny="2.853129536770314" maxy="3.8531295367703131"/>
+			<constraints>
+				<movex from="Center" to="Left" offset="0" item="REC_ClientProject"/>
+			</constraints>
+			<parameters>
+				<parameter name="dMaxLength" value="4.5cm"/>
+				<parameter name="dTextSize" value="4pt"/>
+				<parameter name="eType" value="Normal"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="TXT_ClientName" sequencenumber="7" definition="TextFixed">
+			<initialplacement minx="25.45" maxx="27.95" miny="0.3499999999999972" maxy="2.35"/>
+			<constraints>
+				<movex from="Center" to="Left" offset="0" item="REC_ClientProject"/>
+				<movey from="Top" to="Top" offset="-0.15" item="REC_ClientProject"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="6pt"/>
+				<parameter name="strFont" value="Arial(TT)"/>
+				<parameter name="strDefault" value="Client"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="TXT_ProjectName" sequencenumber="8" definition="TextFixed">
+			<initialplacement minx="24.2" maxx="29.2" miny="-0.30000000000000498" maxy="0.19999999999999718"/>
+			<constraints>
+				<movex from="Center" to="Left" offset="0" item="REC_ClientProject"/>
+				<movey from="Top" to="Bottom" offset="-0.15" item="TXT_ClientName"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="5pt"/>
+				<parameter name="strDefault" value="Project"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="TXT_ProjectLocation" sequencenumber="9" definition="TextFixed">
+			<initialplacement minx="25.95" maxx="27.45" miny="-0.94999999999999984" maxy="-0.45000000000000501"/>
+			<constraints>
+				<movex from="Center" to="Left" offset="0" item="TXT_ClientName"/>
+				<movey from="Top" to="Bottom" offset="-0.15" item="TXT_ProjectName"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="5pt"/>
+				<parameter name="strDefault" value="Location"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="TXT_ProjectNo" sequencenumber="10" definition="TextFixed">
+			<initialplacement minx="23.65" maxx="26.795720572509204" miny="0.44491934102820851" maxy="1.0550806589717916"/>
+			<constraints>
+				<movex from="Left" to="Left" offset="0.25" item="REC_Info"/>
+				<movey from="Center" to="Bottom" offset="0" item="REC_Info"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="5pt"/>
+				<parameter name="strDefault" value="Project no: [ENTER HERE]"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="TXT_LineNo" sequencenumber="11" definition="TextFixed">
+			<initialplacement minx="28.326290258131589" maxx="29.75" miny="0.95508065897179195" maxy="1.0550806589717916"/>
+			<constraints>
+				<movex from="Right" to="Right" offset="-0.25" item="REC_Info"/>
+				<movey from="Top" to="Top" offset="0" item="TXT_ProjectNo"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="5pt"/>
+				<parameter name="strDefault" value="Line [ENTER HERE]"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="TXT_Abitibi" sequencenumber="12" definition="TextFixed">
+			<initialplacement minx="25.7" maxx="27.7" miny="0" maxy="0.5"/>
+			<constraints>
+				<movex from="Center" to="Left" offset="0" item="REC_Company"/>
+				<movey from="Center" to="Bottom" offset="0" item="REC_Company"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="5pt"/>
+				<parameter name="strDefault" value="Abitibi Geophysics Inc."/>
+			</parameters>
+		</basegroup>
+		<basegroup name="TXT_Trademark" sequencenumber="13" definition="TextFixed">
+			<initialplacement minx="24.2" maxx="29.2" miny="24.6" maxy="26.6"/>
+			<constraints>
+				<movex from="Center" to="Left" offset="0" item="LOGO"/>
+				<movey from="Top" to="Bottom" offset="-0.4" item="LOGO"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="10pt"/>
+				<parameter name="strDefault" value="OreVision3D® Survey"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="TXT_LineMain" sequencenumber="14" definition="TextFixed">
+			<initialplacement minx="24.95" maxx="28.45" miny="13.75" maxy="16.25"/>
+			<constraints>
+				<movex from="Center" to="Left" offset="0" item="TXT_Trademark"/>
+				<movey from="Center" to="Bottom" offset="0"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="8pt"/>
+				<parameter name="strDefault" value="Line [ENTER HERE]"/>
+			</parameters>
+		</basegroup>
+		<basegroup name="TXT_AN" sequencenumber="15" definition="TextFixed">
+			<initialplacement minx="23.95" maxx="29.45" miny="23.45" maxy="24.45"/>
+			<constraints>
+				<movex from="Center" to="Left" offset="0" item="TXT_Trademark"/>
+				<movey from="Top" to="Bottom" offset="-0.15" item="TXT_Trademark"/>
+			</constraints>
+			<parameters>
+				<parameter name="dSize" value="8pt"/>
+				<parameter name="strDefault" value="(a = ? m / n = ?)"/>
+			</parameters>
+		</basegroup>
+	</basegroups>
+</maptemplate>
