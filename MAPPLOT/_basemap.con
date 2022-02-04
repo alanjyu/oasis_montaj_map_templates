@@ -1,0 +1,24 @@
+MGRP Coordinates,0,1
+RPLS $LLOFF,"0.15"
+
+IFNE 3,0
+
+ANOY ,,,,,500,0.15,,0,-1,,,0.1,,1    /refp,x1,y1,x2,y2,asep,tick,side,sense,orient,pref,im,postoff,dec,edge
+ANOX ,,,,,500,0.15,,0,0,,,0.1,,1
+RPLS $LLOFF,"0.5"
+
+IFNE 3,-1
+GRID 3,,,,,grid=kt50                 /gopt,dx,dy,ddx,ddy,att
+ENDF
+
+ENDF
+
+IFNE -5,-5  
+GRID -5,, 
+ALAT ,,$LLOFF,,,-1                   /att,height,width,space,slant,font 
+     cl=kt50,0.20,0.20,0.20,15 
+ALON ,,$LLOFF                        
+     cl=kt50,0.20,0.20,0.20,15
+ENDF
+
+RECT 12
