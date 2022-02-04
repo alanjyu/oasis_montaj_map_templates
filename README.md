@@ -33,7 +33,7 @@ In the cases where template files are not detected, or you are modifying the tem
 
 
 ### Logos
-You can move the [Logos/](https://github.com/alanjyu/MontajTemplates/tree/main/Logos) folder to Geosoft's template directory at "C:\Users\[USERNAME]\Documents\Geosoft\Desktop Applications\maptemplate", so that they are linked automatically in the templates.
+You can move [Logos/](https://github.com/alanjyu/MontajTemplates/tree/main/Logos) to Geosoft's template directory at "C:\Users\\[USERNAME\]\Documents\Geosoft\Desktop Applications\maptemplate", so that they are linked automatically in the templates.
 
 
 ## Using templates
