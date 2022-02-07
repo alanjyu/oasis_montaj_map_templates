@@ -1,0 +1,10 @@
+_contour.mdf /MDF|scale, ufac, x0, y0
+0,1, ,1 /border, lowtic, smooth, suppop, nth, gtitle
+dp=kt150 /pdef, ptick, pxval, pframe, psidel
+1.15 /hlb, htl, hcr, htk, hxv, hsl
+5     /ominl,cminl,skipa,skipb,skipc,skipd,skipe,skipf
+0,-1, /xval, digxv, minxv, markxv
+0,,,1,,,0 /levopt, conbeg, conend, lbup, lbmult, logopt, labelcol
+1,1,C1=kt100,1,0,0,,30 /cint,lintyp,catt,label,dense,digits,conlo,conhi
+5,1,C2=kt200,1,0,0,, /cint,lintyp,catt,label,dense,digits,conlo,conhi
+25,1,C3=kt300,1,0,0,, /cint,lintyp,catt,label,dense,digits,conlo,conhi

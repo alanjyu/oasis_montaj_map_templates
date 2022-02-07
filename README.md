@@ -1,6 +1,6 @@
 # Templates for Montaj
 
-This repository provides template files for faster map producction in Geosoft Oasis Montaj. Click [here](https://github.com/alanjyu/MontajTemplates/archive/refs/heads/main.zip) to download the package.
+This repository provides template and controls files for faster map producction in Geosoft Oasis Montaj. The aim of this project is to streamline the project so that it requires as few user inputs to make standardized maps as possible. Click [here](https://github.com/alanjyu/MontajTemplates/archive/refs/heads/main.zip) to download the package. 
 
 ## Environment
 - Geosoft Oasis Montaj 2021.2
@@ -41,28 +41,33 @@ You can move [Logos/](https://github.com/alanjyu/MontajTemplates/tree/main/Logos
 1. To use the template, in Montaj click "Map Tools" → "New Map from…" → "Template Library".
 2. Select one of the templates from your library, click "OK". If no templates show up in the library, refer to *Adding templates to library*.
 3. The template itself does not store any coordinate data. Click "Define from X,Y" or "Define from Lat, Lon" → "Scan" from "Grid" or "Geosoft GDB database". Recalculate scale.
-4. The template searches for [Logos](https://github.com/alanjyu/MontajTemplates/tree/main/Logos) in the template library (Refer to *Logos*). If you wish to use a different logo, click on the column to the right of "Image name" → "…" and select the image. You may need to change the image file type in the file explorer in the bottom right. However, if no logo is needed, click "delete".
+4. The template searches for [Logos/](https://github.com/alanjyu/MontajTemplates/tree/main/Logos) in the template library (Refer to *Logos*). If you wish to use a different logo, click on the column to the right of "Image name" → "…" and select the image. You may need to change the image file type in the file explorer in the bottom right. However, if no logo is needed, click "delete".
 5. Select where you want to save the map.
 6. Enter the questions according to prompt. You can always change them later while editing the map. If you want to modify the template for the entire project, refer to *Modifying templates*.
 
+## MAPPLOT Control files
+Files with .con extensions are MAPPLOT control files. They provide finer controls than simple template files. You can see the documentation [here](https://help.seequent.com/Oasis-montaj/9.9/en/Content/gxhelp/mapplot/mapplot_overview.htm?tocpath=Oasis%20montaj%7CWorkflow%7CAnalyse%20Data%7CEdit%20and%20Manipulate%20Maps%7CWork%20with%20Map%20Templates%7CFigure%20and%20Full%20Map%20Templates%20(MAPPLOT%20Template%20Manager)%7CMAPPLOT%20Topics%20and%20Command%20Reference%7C_____0). 
 
 ## Map layer
 
 ### Displaying map layer data
+Map data are displayed into the predefined space (blue rectangles in template view). Click "Grind and Image" → "Display on Map…" → "Grid", and select your **.grd** file.
 
-To display map data into the predefined space (blue rectangles in template view), click "Grind and Image" → "Display on Map…" → "Grid", and Select your .grd file.
-
-### Editing map layer data
+### Adjusting coordinate size
 To change coordinate font size, click on the map layer, right-click → "Select all". Right-click again → "Text attributes". Here you can adjust font sizes.
 
-**NOTE**: Template files do not have access to useful information from the map layer data, so you have to edit them manually as of now.
+**NOTE**: Template files do not have access to viable information from the map layer data, so you have to edit them manually as of now.
 
-### Using MAPPLOT control files
-Files with .con extensions are MAPPLOT control files. To use them after creating your map using a template, click "Map Tools" → "Base Map" → "MAPPLOT Control File...".
+Alternatively, if you wish to use MAPPLOT files, click "Map Tools" → "Base Map" → "MAPPLOT Control File..." and select **_basemap.con** in [MAPPLOT/](https://github.com/alanjyu/MontajTemplates/tree/main/MAPPLOT).
 
-### Displaying colourbar
-To create a colourbar, click "Grid and Image" → "Display on Map…" → "Colour Legend Map", and select the corresponding data layer. Click "Locate" and click on the map to select the location of the colourbar.
+### Colourbar
+Click "Grid and Image" → "Display on Map…" → "Colour Legend Map", and select the corresponding data layer. Click "Locate" and click on the map to select the location of the colourbar.
+
+### Contouring
+You can click "Map Tools" → "Contour" and choose one of the contouring options. Choose "Contour" if you want more controls.
+
+Alternatively, if you wish to use MAPPLOT files, click "Map Tools" → "Contour" → "Have a control file". Select the grid file and cooresponding contouring parameters for your map (**CVG.con**, **GI.con**, **IP.con**, **MF.con**, **RES.con**, and **TF.con**). These parameters are from the previously-made maps.
 
 ## Notes
--	I am working on the vicinity map view.
--	I am thinking about GX scripting to produce map templates so that user only needs to enter the project information once, depending on how much I can complete with MAPPLOT control files.
+-	Vicinity map view.
+-	GX scripting depending on how capable MAPPLOT control files are.
