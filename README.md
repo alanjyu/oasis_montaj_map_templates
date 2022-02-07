@@ -1,4 +1,4 @@
-# Templates for Montaj
+# Templates and control files for Geosoft Oasis Montaj
 
 This repository provides template and controls files for map producction in Geosoft Oasis Montaj. The aim of this project is to optimize and standardize the process so that it requires as few user inputs as possible. Click [here](https://github.com/alanjyu/MontajTemplates/archive/refs/heads/main.zip) to download the package. 
 
@@ -68,6 +68,8 @@ Map data are to be displayed into the predefined space (blue rectangles in templ
 1. Click "Grind and Image" → "Display on Map…" → "Grid".
 2. Select your **.grd** file.
 
+You can also simply drag your opened grid file to the blue rectangle.
+
 ### Adjusting coordinate size
 
 1. Click on the map layer, right-click → "Select all". 
@@ -96,5 +98,5 @@ Alternatively, if you wish to use MAPPLOT files:
 2. Select the grid file and cooresponding contouring method in [MAPPLOT/](https://github.com/alanjyu/MontajTemplates/tree/main/MAPPLOT) (**CVG.con**, **GI.con**, **IP.con**, **MF.con**, **RES.con**, and **TF.con**). These parameters are from the previously-made maps.
 
 ## Notes
--	Vicinity map view.
+-	I've yet to find an easy way to create a vicinity map view.
 -	GX scripting depending on how capable MAPPLOT control files are.
