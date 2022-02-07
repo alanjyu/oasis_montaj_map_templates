@@ -35,7 +35,7 @@ The templates in [Mag/](https://github.com/alanjyu/MontajTemplates/tree/main/Mag
 
 Montaj scans templates (.geosoft_maptemplate) in "C:\Users\\[USERNAME\]\Documents\Geosoft\Desktop Applications\maptemplate". You can directly copy the templates to this directory. 
 
-In the cases where template files are not detected, or you are modifying the templates:
+In case the template files are not detected, or you are modifying the templates:
 
 1. Open the template in Montaj by clicking "Map Tools" → "Map Template" → "Open Map Template…".
 2. Right-click on the template → "Properties".
