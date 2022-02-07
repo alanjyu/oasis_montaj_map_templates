@@ -64,9 +64,9 @@ Alternatively, if you wish to use MAPPLOT files, click "Map Tools" → "Base Map
 Click "Grid and Image" → "Display on Map…" → "Colour Legend Map", and select the corresponding data layer. Click "Locate" and click on the map to select the location of the colourbar.
 
 ### Contouring
-You can click "Map Tools" → "Contour" and choose one of the contouring options. Choose "Contour" if you want more controls.
+You can click "Map Tools" → "Contour" and choose one of the contouring options. Choose "Contour" if you want finer controls.
 
-Alternatively, if you wish to use MAPPLOT files, click "Map Tools" → "Contour" → "Have a control file". Select the grid file and cooresponding contouring parameters for your map (**CVG.con**, **GI.con**, **IP.con**, **MF.con**, **RES.con**, and **TF.con**). These parameters are from the previously-made maps.
+Alternatively, if you wish to use MAPPLOT files, click "Map Tools" → "Contour" → "Have a control file". Select the grid file and cooresponding contouring parameters in [MAPPLOT/](https://github.com/alanjyu/MontajTemplates/tree/main/MAPPLOT) (**CVG.con**, **GI.con**, **IP.con**, **MF.con**, **RES.con**, and **TF.con**). These parameters are from the previously-made maps.
 
 ## Notes
 -	Vicinity map view.
