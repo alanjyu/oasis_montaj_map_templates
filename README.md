@@ -1,15 +1,26 @@
 # Templates for Montaj
 
-This repository provides template and controls files for faster map producction in Geosoft Oasis Montaj. The aim of this project is to streamline the project so that it requires as few user inputs to make standardized maps as possible. Click [here](https://github.com/alanjyu/MontajTemplates/archive/refs/heads/main.zip) to download the package. 
+This repository provides template and controls files for map producction in Geosoft Oasis Montaj. The aim of this project is to optimize and standardize the process so that it requires as few user inputs as possible. Click [here](https://github.com/alanjyu/MontajTemplates/archive/refs/heads/main.zip) to download the package. 
 
 ## Environment
-- Geosoft Oasis Montaj 2021.2
+- [Geosoft Oasis Montaj 2021.2](https://www.seequent.com/products-solutions/geosoft-oasis-montaj/)
 
 ## Package structure
-The templates are separated by catergories: [Mag/](https://github.com/alanjyu/MontajTemplates/tree/main/Mag) for magnetic survey maps; [IP/](https://github.com/alanjyu/MontajTemplates/tree/main/IP) for induced polarization survey lines and ties. Each folder also has a sub-folder named [No prompts/](https://github.com/alanjyu/MontajTemplates/tree/main/Mag/No%20prompts) with templates used to modify and create custom templates for each project. [Logos/](https://github.com/alanjyu/MontajTemplates/tree/main/Logos) contain logo images used in the templates. [MAPPLOT/](https://github.com/alanjyu/MontajTemplates/tree/main/MAPPLOT) contains MAPPLOT control files used for further adjustments once you create a map from a template.
 
-## Modifying templates
-By default, the templates are introduced with prompts on which you answer questions while creating maps. If you do not wish to enter them every time, you can customize a template used for the entire project.
+This package is separated by catergories: 
+
+- [Templates/](https://github.com/alanjyu/MontajTemplates/tree/main/Mag) contains map templates.
+  - [Mag/](https://github.com/alanjyu/MontajTemplates/tree/main/Mag) for magnetic survey maps.
+  - [IP/](https://github.com/alanjyu/MontajTemplates/tree/main/IP) for induced polarization survey lines and ties. 
+  - [No prompts/](https://github.com/alanjyu/MontajTemplates/tree/main/Mag/No%20prompts) contains templates with textboxes instead of prompts, used to create a custom template for an entire project. 
+- [Logos/](https://github.com/alanjyu/MontajTemplates/tree/main/Logos) contains logos used in the templates. 
+- [MAPPLOT/](https://github.com/alanjyu/MontajTemplates/tree/main/MAPPLOT) contains MAPPLOT control files used for further adjustments, and are meant to be used once you have created a map from a template.
+
+## Templates
+
+### Modifying templates
+The templates in [Mag/](https://github.com/alanjyu/MontajTemplates/tree/main/Mag) and [IP/](https://github.com/alanjyu/MontajTemplates/tree/main/IP) contain prompts on which you input a series of information pieces before creating a map. If you do not wish to enter them every time, you can customize a template used for an entire project.
+
 1. Open the template by clicking "Map Tools" → "Map Template" → "Open Map Template…"
 2. All template folders contain a "No Prompt" folder, specifically for modifying. It is also recommended to back up the templates before modifying them. 
 3. Open your desired template in the folder.
@@ -17,12 +28,12 @@ By default, the templates are introduced with prompts on which you answer questi
 5. Click the "Save" icon on the top left of the template view. Note that this will overwrite your original file.
 6. To add the modified template to the library, refer to *Adding templates to library*.
 
-**NOTE**: Geosoft templates are essentially .xml files. You can open them with a notepad if you know how to edit them. Notably, "media" changes the page size.
+**NOTE**: Geosoft templates are fundamentally XML files. You can edit them with a notepad. Notably, "media" changes the page size.
 
 
 ### Adding templates to library
 
-Montaj scans map template files (.geosoft_maptemplate as extension) in the directory "C:\Users\\[USERNAME\]\Documents\Geosoft\Desktop Applications\maptemplate" by default. You can try to copy these files to that directory. 
+Montaj scans templates (.geosoft_maptemplate) in "C:\Users\\[USERNAME\]\Documents\Geosoft\Desktop Applications\maptemplate". You can directly copy the templates to this directory. 
 
 In the cases where template files are not detected, or you are modifying the templates:
 
@@ -33,10 +44,10 @@ In the cases where template files are not detected, or you are modifying the tem
 
 
 ### Logos
-You can move [Logos/](https://github.com/alanjyu/MontajTemplates/tree/main/Logos) to Geosoft's template directory at "C:\Users\\[USERNAME\]\Documents\Geosoft\Desktop Applications\maptemplate", so that they are linked automatically in the templates.
+You can move [Logos/](https://github.com/alanjyu/MontajTemplates/tree/main/Logos) in "C:\Users\\[USERNAME\]\Documents\Geosoft\Desktop Applications\maptemplate", as they are linked to this directory in the templates.
 
 
-## Using templates
+### Using templates
 
 1. To use the template, in Montaj click "Map Tools" → "New Map from…" → "Template Library".
 2. Select one of the templates from your library, click "OK". If no templates show up in the library, refer to *Adding templates to library*.
@@ -46,27 +57,43 @@ You can move [Logos/](https://github.com/alanjyu/MontajTemplates/tree/main/Logos
 6. Enter the questions according to prompt. You can always change them later while editing the map. If you want to modify the template for the entire project, refer to *Modifying templates*.
 
 ## MAPPLOT Control files
-Files with .con extensions are MAPPLOT control files. They provide finer controls than simple template files. You can see the documentation [here](https://help.seequent.com/Oasis-montaj/9.9/en/Content/gxhelp/mapplot/mapplot_overview.htm?tocpath=Oasis%20montaj%7CWorkflow%7CAnalyse%20Data%7CEdit%20and%20Manipulate%20Maps%7CWork%20with%20Map%20Templates%7CFigure%20and%20Full%20Map%20Templates%20(MAPPLOT%20Template%20Manager)%7CMAPPLOT%20Topics%20and%20Command%20Reference%7C_____0). 
+
+Files with .con extensions are MAPPLOT control files. They provide slightly finer controls than templates. Read documentation [here](https://help.seequent.com/Oasis-montaj/9.9/en/Content/gxhelp/mapplot/mapplot_overview.htm?tocpath=Oasis%20montaj%7CWorkflow%7CAnalyse%20Data%7CEdit%20and%20Manipulate%20Maps%7CWork%20with%20Map%20Templates%7CFigure%20and%20Full%20Map%20Templates%20(MAPPLOT%20Template%20Manager)%7CMAPPLOT%20Topics%20and%20Command%20Reference%7C_____0). 
 
 ## Map layer
 
 ### Displaying map layer data
-Map data are displayed into the predefined space (blue rectangles in template view). Click "Grind and Image" → "Display on Map…" → "Grid", and select your **.grd** file.
+Map data are to be displayed into the predefined space (blue rectangles in template view).
+
+1. Click "Grind and Image" → "Display on Map…" → "Grid".
+2. Select your **.grd** file.
 
 ### Adjusting coordinate size
-To change coordinate font size, click on the map layer, right-click → "Select all". Right-click again → "Text attributes". Here you can adjust font sizes.
 
-**NOTE**: Template files do not have access to viable information from the map layer data, so you have to edit them manually as of now.
+1. Click on the map layer, right-click → "Select all". 
+2. Right-click again → "Text attributes", and adjust font sizes.
 
-Alternatively, if you wish to use MAPPLOT files, click "Map Tools" → "Base Map" → "MAPPLOT Control File..." and select **_basemap.con** in [MAPPLOT/](https://github.com/alanjyu/MontajTemplates/tree/main/MAPPLOT).
+Alternatively, if you wish to use MAPPLOT files:
+
+1. Click "Map Tools" → "Base Map" → "MAPPLOT Control File...".
+2. Select **_basemap.con** in [MAPPLOT/](https://github.com/alanjyu/MontajTemplates/tree/main/MAPPLOT).
 
 ### Colourbar
-Click "Grid and Image" → "Display on Map…" → "Colour Legend Map", and select the corresponding data layer. Click "Locate" and click on the map to select the location of the colourbar.
+
+1. Click "Grid and Image" → "Display on Map…" → "Colour Legend Bar...".
+2. Select the corresponding data layer.
+3. Click "Locate" and click on the map to select the location of the colourbar.
+4. To further adjust the colourbar, click "More". Two notable values are "Label decimals" and "Maximum bar height (mm)". For an A4 paper, the recommended value for maximum bar height is 80.
 
 ### Contouring
-You can click "Map Tools" → "Contour" and choose one of the contouring options. Choose "Contour" if you want finer controls.
 
-Alternatively, if you wish to use MAPPLOT files, click "Map Tools" → "Contour" → "Have a control file". Select the grid file and cooresponding contouring parameters in [MAPPLOT/](https://github.com/alanjyu/MontajTemplates/tree/main/MAPPLOT) (**CVG.con**, **GI.con**, **IP.con**, **MF.con**, **RES.con**, and **TF.con**). These parameters are from the previously-made maps.
+1. Click "Map Tools" → "Contour" and choose one of the contouring options.
+2. Choose "Contour" if you want finer controls. Select your input layer and parameters.
+
+Alternatively, if you wish to use MAPPLOT files:
+
+1. Click "Map Tools" → "Contour" → "Have control file". 
+2. Select the grid file and cooresponding contouring method in [MAPPLOT/](https://github.com/alanjyu/MontajTemplates/tree/main/MAPPLOT) (**CVG.con**, **GI.con**, **IP.con**, **MF.con**, **RES.con**, and **TF.con**). These parameters are from the previously-made maps.
 
 ## Notes
 -	Vicinity map view.
