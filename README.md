@@ -58,7 +58,7 @@ You can move [Logos/](https://github.com/alanjyu/MontajTemplates/tree/main/Logos
 
 ## MAPPLOT Control files
 
-Files with .con extensions are MAPPLOT control files. They provide slightly finer controls than templates. Read documentation [here](https://help.seequent.com/Oasis-montaj/9.9/en/Content/gxhelp/mapplot/mapplot_overview.htm?tocpath=Oasis%20montaj%7CWorkflow%7CAnalyse%20Data%7CEdit%20and%20Manipulate%20Maps%7CWork%20with%20Map%20Templates%7CFigure%20and%20Full%20Map%20Templates%20(MAPPLOT%20Template%20Manager)%7CMAPPLOT%20Topics%20and%20Command%20Reference%7C_____0). 
+Files ending with .con are MAPPLOT control files. They provide slightly finer controls than templates. Read documentation [here](https://help.seequent.com/Oasis-montaj/9.9/en/Content/gxhelp/mapplot/mapplot_overview.htm?tocpath=Oasis%20montaj%7CWorkflow%7CAnalyse%20Data%7CEdit%20and%20Manipulate%20Maps%7CWork%20with%20Map%20Templates%7CFigure%20and%20Full%20Map%20Templates%20(MAPPLOT%20Template%20Manager)%7CMAPPLOT%20Topics%20and%20Command%20Reference%7C_____0). 
 
 ## Map layer
 
